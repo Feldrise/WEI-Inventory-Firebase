@@ -24,6 +24,7 @@ class UserStore with ChangeNotifier {
     notifyListeners();
   }
 
+  String get id => _user.id;
   String get email => _user.email;
   String get fullName => "${_user.firstName} ${_user.secondName}";
   String get firstName => _user.firstName;

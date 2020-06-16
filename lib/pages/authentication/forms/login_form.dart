@@ -60,6 +60,7 @@ class _LoginFormState extends State<LoginForm> {
                         controller: _passwordController,
                         hintText: "Entrez votre mot de passe",
                         labelText: "Mot de Passe",
+                        obscureText: true,
                         color: inputColor,
                         validator: (String value) {
                           if (value.isEmpty) {

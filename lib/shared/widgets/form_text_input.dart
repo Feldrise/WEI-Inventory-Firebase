@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:wei_inventory_firebase/utils/colors_utils.dart';
 
 /// This is a wrapper for a TextFormField. It add
@@ -31,6 +32,11 @@ class FormTextInput extends StatelessWidget {
         obscureText: obscureText,
         controller: controller,
         keyboardType: inputType,
+        inputFormatters: <TextInputFormatter>[
+          if (inputType == TextInputType.number)
+            WhitelistingTextInputFormatter.digitsOnly
+        ],
+        maxLines: inputType == TextInputType.multiline ? 2 : 1,
         decoration: InputDecoration(
               border: UnderlineInputBorder(
                 borderSide: BorderSide(

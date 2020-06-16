@@ -35,14 +35,14 @@ class MyApp extends StatelessWidget {
                   elevation: 0,
                 ),
 
-                fontFamily: "Futura Light",
+                // fontFamily: "Futura Light",
                 textTheme: const TextTheme(
-                  headline1: TextStyle(fontSize: 48.0, fontWeight: FontWeight.w800, color: Colors.black87),
-                  headline2: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w300, color: Colors.black87),
-                  subtitle1: TextStyle(fontSize: 26.0, fontWeight: FontWeight.w800, color: Colors.black87),
-                  bodyText1: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: Colors.black87),
-                  bodyText2: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500, color: Colors.black87),
-                  button: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700,)
+                  headline1: TextStyle(fontSize: 48.0, fontWeight: FontWeight.w800, fontFamily: "Futura Light", color: Colors.black87),
+                  headline2: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w300, fontFamily: "Futura Light", color: Colors.black87),
+                  // subtitle1: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: Colors.black87),
+                  // bodyText1: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: Colors.black87),
+                  // bodyText2: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500, color: Colors.black87),
+                  // button: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700,)
                 ),
 
                 visualDensity: VisualDensity.adaptivePlatformDensity,
