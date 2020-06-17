@@ -1,16 +1,22 @@
-# wei_inventory_firebase
+# WEI Inventory Firebase
 
-A new Flutter project.
+> NOTE : cette application a été réaliser à titre d'exemple pour un cours sur Flutter
 
-## Getting Started
+| Build | Release | 
+| ----- | ------- |
+|[![Codemagic build status](https://api.codemagic.io/apps/5eea0eb54b01ee000fdd0ccd/5eea0eb54b01ee000fdd0ccc/status_badge.svg)](https://codemagic.io/apps/5eea0eb54b01ee000fdd0ccd/5eea0eb54b01ee000fdd0ccc/latest_build) | [![Codemagic build status](https://api.codemagic.io/apps/5eea0eb54b01ee000fdd0ccd/5eea0ebeed308f00ec85cb48/status_badge.svg)](https://codemagic.io/apps/5eea0eb54b01ee000fdd0ccd/5eea0ebeed308f00ec85cb48/latest_build) |
 
-This project is a starting point for a Flutter application.
+![Bannière](https://github.com/Feldrise/WEI-Inventory-Firebase/raw/master/graphics/banner.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Description
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+WEI Inventory Firebase vous permet de créer des invenaites pour y mettre des produits. Les inventaires sont automatiquement synchronisés avec votre compte de façon à ce que vous puissiez y accèder depuis n'importe quel appareil.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Actuellement les produits possèdent ces attributs : 
+ - Un nom
+ - Une description 
+ - Une quantité
+
+## Le code
+
+L'application a été réalisé grâce à Flutter et Firebase. J'utilise aussi Provider pour la gestion des States. Le code de l'application se trouve donc dans le dossier lib.
