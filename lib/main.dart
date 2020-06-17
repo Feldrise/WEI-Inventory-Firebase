@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         builder: (context, userStore, child) {
           return MaterialApp(
             title: 'Flutter Demo',
+            debugShowCheckedModeBanner: false,
             theme: ThemeData(
               scaffoldBackgroundColor: Colors.white,
 
