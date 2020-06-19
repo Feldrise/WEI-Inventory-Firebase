@@ -23,7 +23,7 @@ class ProductCard extends StatelessWidget {
           Text(product.name, style: Theme.of(context).textTheme.headline2,),
           const SizedBox(height: 8.0,),
           Expanded(
-            child: Text(product.description, overflow: TextOverflow.ellipsis, maxLines: 3,),
+            child: Text(product.description, overflow: TextOverflow.clip,),
           ),
           Wrap(
             alignment: WrapAlignment.center,

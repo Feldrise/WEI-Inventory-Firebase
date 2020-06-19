@@ -11,29 +11,6 @@ class ProductsList extends StatelessWidget {
 
   final String inventoryId;
 
-  // Get the number of columns to show depending on screen size
-  int _crossAxisCount(BuildContext context) {
-    final double width = MediaQuery.of(context).size.width;
-
-    if (width > 1500) {
-      return 7;
-    }
-    else if (width > 1300) {
-      return 6;
-    }
-    else if (width > 1100) {
-      return 5;
-    }
-    else if (width > 800) {
-      return 4;
-    }
-    else if (width > 600) {
-      return 3;
-    }
-
-    return 2;
-  }
-
   @override
   Widget build(BuildContext context) {
     return Consumer<UserStore>(
@@ -70,10 +47,10 @@ class ProductsList extends StatelessWidget {
             }
 
             return GridView(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
-                crossAxisCount: _crossAxisCount(context),
+                maxCrossAxisExtent: 310,
                 childAspectRatio: 6 / 7
               ),
               children: productsWidget.reversed.toList(),
